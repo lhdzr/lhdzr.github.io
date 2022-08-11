@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-mx">
     <head>
         <title>
             León Hernández Robles
@@ -22,40 +22,27 @@
             <h1 style = "text-align: center;">
             lhdzr
         </h1>
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
-            <a href="#bookme" class="w3-bar-item w3-button">BookMe</a>
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+        <a href="#bookme" class="w3-bar-item w3-button">BookMe</a>
         </div>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/lhdzr/" 
-                target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:leonhdzrobles@gmail.com"
-                target="_blank">Correo</a></li>
-            <li><a href="https://github.com/lhdzr" 
-                target="_blank">Github</a></li>
-            <li><a href=>About</a></li>
-        </ul>
+
 
         <hr>
 
         <br>
-        
-        <div class="w3-card" style="width: 200px;">
+
+        <div class="w3-container">
         <img src="images\LeónHernándezRobles.jpeg"
         class="cropped"
-        style="width: 100%;"
+        style="width: 30%;
+        float: left;"
         alt="León" 
         title="León Hernández Robles">
-        <div class="w3-container w3-center">
-            <p class="w3-xlarge">
-                León Hernández Robles
-            </p>
-            <p>
-                Estudiante
-            </p>
-        </div>
-        </div>
 
+        <div class="w3-container"
+        style="width: 70%;
+        float: right;">
         <h2 style="float: right;">
             Sobre mí
         </h2>
@@ -73,9 +60,8 @@
             sectores público y privado empleando herramientas como el análisis
             de datos, big data, y machine learning.
         </p>
-
-        <p >
-        </p>
+        </div>
+        </div>
 
         <table style="width: 55%;">
             <caption>
@@ -95,29 +81,53 @@
 
         <h2>Habilidades</h2>
         <div class="w3-content w3-display-container">
-            <img class="habilities-slides" 
-            src="images/quantitative-analysis.jpg" 
+            <div class="abilities-slides">
+            <img class="cropped"
+            src="images/quantitative-analysis.jpg"
+            style = "width: 100%;
+            height: 300px;">
+            <p>Análisis cuantitativo</p>
+            </div>
+
+            <div class="abilities-slides">
+            <img src="images/qualitative-analysis.jpg" 
             style = "width: 100%;">
-            <img class="habilities-slides" 
-            src="images/qualitative-analysis.jpg" 
+            <p>Análisis cualitativo</p>
+            </div>
+
+            <div class="abilities-slides">
+            <img src="images/sql.jpg" 
             style = "width: 100%;">
-            <img class="habilities-slides" 
-            src="images/sql.jpg" 
+            <p>SQL</p>
+            </div>
+            
+            <div class="abilities-slides">
+            <img src="images/collaborative-coding.jpg" 
             style = "width: 100%;">
-            <img class="habilities-slides" 
-            src="images/collaborative-coding.jpg" 
+            <p>Código colaborativo</p>
+            </div>
+
+            <div class="abilities-slides">
+            <img src="images/dynamic-systems.jpg" 
             style = "width: 100%;">
-            <img class="habilities-slides" 
-            src="images/dynamic-systems.jpg" 
+            <p>Sistemas dinámicos</p>
+            </div>
+
+            <div class="abilities-slides">
+            <img src="images/geospatial-analysis.jpg" 
             style = "width: 100%;">
-            <img class="habilities-slides" 
-            src="images/geospatial-analysis.jpg" 
-            style = "width: 100%;">
+            <p>Análisis geoespacial</p>
+            </div>
 
             <button class="w3-button w3-black w3-display-left"
             onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right"
             onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <div class="w3-content w3-display-container">
+            
+
         </div>
 
         <script>
@@ -130,7 +140,7 @@
 
             function showDivs(n) {
                 var i;
-                var x = document.getElementsByClassName("habilities-slides");
+                var x = document.getElementsByClassName("abilities-slides");
                 if (n > x.length) {slideIndex = 1}
                 if (n < 1) {slideIndex = x.length}
                 for (i = 0; i < x.length; i++) {
@@ -179,6 +189,15 @@
         This is a button
     </button>
 
+    <ul id="contact">
+        <li><a href="https://www.linkedin.com/in/lhdzr/" 
+        target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:leonhdzrobles@gmail.com"
+        target="_blank">Correo</a></li>
+        <li><a href="https://github.com/lhdzr" 
+        target="_blank">Github</a></li>
+        <li><a href=>About</a></li>
+    </ul>
     <p id="demo"></p>
 
         <hr>
